@@ -8,5 +8,5 @@ df3 = pd.read_csv('../result/task_1_1_3.csv',encoding='gbk')
 data1 = pd.merge(df1,df2,on='CardNo')
 data2 = pd.merge(df1,df3,on='AccessCardNo')
 #保存数据
-data1.to_csv('../result/task1_2_1.csv',encoding='gbk')
-data2.to_csv('../result/task1_2_2.csv',encoding='gbk')
+data1.to_csv('../result/task1_2_1.csv',encoding='gbk',index=False)
+data2.to_csv('../result/task1_2_2.csv',encoding='gbk',index=False)
