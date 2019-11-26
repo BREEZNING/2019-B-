@@ -1,5 +1,9 @@
 import pandas as pd 
 
+'''
+提取出学生在食堂就餐的消费记录
+'''
+
 #筛选出在食堂就餐的数据
 def choose():
     df = pd.read_csv('../result/task_1_1_2.csv',encoding='gbk',usecols=['Index','PeoNo','Date','Type','Dept'])
