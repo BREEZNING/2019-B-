@@ -1,6 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt 
 
+'''
+绘制各大食堂就餐人次占比饼图
+'''
+
 #根据消费时间划分早中晚餐类型
 def f(x):
     if (x.hour < 11):
