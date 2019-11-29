@@ -16,3 +16,4 @@ def h():
     print(group['Money'].sum()/group.size())
 
 f()
+h()
