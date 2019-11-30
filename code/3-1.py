@@ -12,8 +12,8 @@ def f():
 #不同专业不同性别学生群体的消费情况
 def h():
     group = df.groupby(['Major','Sex']) #按专业性别分组
-    print(group['Money'].sum(),group.size())
-    print(group['Money'].sum()/group.size())
+    print(group['Money'].sum(),group['PeoNo'].nunique())
+    print(group['Money'].sum()/group['PeoNo'].nunique())
 
 f()
 h()
